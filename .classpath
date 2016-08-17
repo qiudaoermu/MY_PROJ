@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/xom-1.1.jar" sourcepath="C:/apache-tomcat-7.0.68/extal/xom-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/mysql-connector-java-5.1.30-bin.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/commons-fileupload-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/commons-io-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/ezmorph-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/freemarker.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/hibernate.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/jackson-all-1.6.0.jar.zip"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/jackson-annotations-2.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/jackson-core-2.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/jackson-databind-2.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/jcommon-1.0.5.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/jfreechart-1.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/jsp-api-2.0.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/mysql-connector-java-3.1.13-bin.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/ognl-3.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/org.apache.log4j.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/servlet-api.jar" sourcepath="C:/apache-tomcat-7.0.68/extal/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/struts2-json-plugin-2.1.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/struts2-spring-plugin-2.1.6.jar"/>
+	<classpathentry kind="lib" path="C:/apache-tomcat-7.0.68/extal/xwork-core-2.3.24.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0 (2)">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_91">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

@@ -5,7 +5,7 @@ define(['jquery','jqueryUI','i18n','jqGrid'],function($){
 			
 	console.log('**-ready-**')
 			
-	var intjgrid = function(){
+	var intijgrid = function(){
 		     var gidData = [
 		            {id: "1", orderdate: "2013-10-01", customer: "customer",  price: "200.00", vat: "10.00", completed: true, shipment: "TN", total: "210.00"},
 		            {id: "2", orderdate: "2013-10-02", customer: "customer2",  price: "300.00", vat: "20.00", completed: false, shipment: "FE", total: "320.00"},
@@ -20,7 +20,7 @@ define(['jquery','jqueryUI','i18n','jqGrid'],function($){
 		            {id: "11", orderdate: "2013-09-08", customer: "customer11",  price: "500.00", vat: "30.00", completed: false, shipment: "FE", total: "530.00"},
 		            {id: "12", orderdate: "2013-09-10", customer: "customer12",  price: "500.00", vat: "30.00", completed: false, shipment: "FE", total: "530.00"}
 		        ],
-		        theGrid = $("#theGrid")
+		    theGrid = $("#theGrid")
 		       
 	
 		    theGrid.jqGrid({
@@ -32,7 +32,6 @@ define(['jquery','jqueryUI','i18n','jqGrid'],function($){
 		            {name: 'orderdate',  width: 55, align: 'center'},
 		            {name: 'price',  width: 55,align:'center'},
 		            {name:'vat',width:55,align: 'center'}
-		           
 		        ],
 
 		        rowNum:5,
@@ -50,7 +49,7 @@ define(['jquery','jqueryUI','i18n','jqGrid'],function($){
 		$.get('uploader.jsp',function(html){
 			
 			$('.mainContent').html(html);
-				intjgrid()
+				intijgrid()
 				console.log('callbacll')
 			
 			

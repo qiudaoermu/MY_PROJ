@@ -74,22 +74,24 @@ body{font-family:Microsoft YaHei}
 			height:70px;
 		margin:0px auto;
 		 margin-top: 93px;}
-.tabList li{width:22.2%;
-			background: #ddd;
-			height:70px;
-			float:left;
-			margin-right:10px;
-			font-size:24px;
-			text-align:center;
-			line-height:70px;
-			color:#672569;
-			cursor: pointer;
+.tabList li{
+		    width: 24%;
+    background: #ddd;
+    height: 70px;
+    float: left;
+    margin-right: 10px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 70px;
+    color: #672569;
+    cursor: pointer;
 
 			}
+		
 .tabList li.on{
 
 
-	background:#ffa346;
+	background:#59bcec;
 	color:#fff;
 
 }

@@ -1,38 +1,48 @@
-define(['jquery','jqueryUI','i18n','jqGrid','uploader','toprecover','asummerment','report'],function(
+
+$(function(){
+	/**
+	 * 
+	 * 四个页面加载的主要方法
+	 */
+	 
+
+	uploader1.init();
+	$(".uploader").bind("click",function(){
 		
-		$,jqueryUI,i18n,jqGrid,uploader,toprecover,asummerment,report
-){
+		uploader1.init();
+		$(this).addClass('on').siblings().removeClass('on');
+		
+		
+	})
 	
+	$(".toprecover").bind("click",function(){
+		
+		topRecover1.init();
+		$(this).addClass('on').siblings().removeClass('on');
+	})
 	
-	var model = {
-			uploader:uploader,
-			toprecover:toprecover,
-			asummerment:asummerment,
-			report:report
-	}
-	console.log(model.topRecover);
-	model.uploader.init();
-	var init = function(){
-		$('.tabList ul li').on('click',function(){
-			
-			var name = $(this).attr('class');
-			console.log(name);
-			$(this).addClass('on').siblings().removeClass('on');
-			
-			if(name.indexOf('on')){
-				console.log('on')
-				name = $.trim(name.replace('on',''));
-			}
-			console.log(name)
-			console.log(model[name])
-			model[name].init();
-		})
-		console.log(1)
-	}
+	$(".asummerment").bind("click",function(){
+		
+		assumnet1.init();
+		$(this).addClass('on').siblings().removeClass('on');
+		
+	})
 	
 	
 	
+	$(".report").bind("click",function(){
+		
+		report1.init();
+		$(this).addClass('on').siblings().removeClass('on');
+		
+	})
 	
-	return {init:init}
 	
-})
+})	
+	
+	
+	
+	
+	
+
+	

@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
  <head>
@@ -7,7 +7,7 @@
   <meta name="Author" content="">
   <meta name="Keywords" content="">
   <meta name="Description" content="">
-  <title>Document</title>
+  <title>IPWAN</title>
   <link rel='stylesheet' href='css/index.css'/>
   <link rel='stylesheet' href='css/jquery-ui-1.8.2.custom.css'/>
   <link rel='stylesheet' href='css/ui.jqgrid.css'/>
@@ -28,7 +28,6 @@
 </div>
 <div class='mainContent'>
  	<div class='content'></div>
-
 </div>
 
 
@@ -37,32 +36,21 @@
 
 
 <script src='js/jquery-3.0.0.js'></script>
-<script type="text/javascript" src='js/require.js'></script>
+<script src="js/jquery-ui-1.8.2.custom.min.js"></script>
+<script src="js/i18n/grid.locale-cn.js"></script>
+<script src="js/jquery.jqGrid.min.js"></script>
+
+<script src="js/topRecover/topRecover.js"></script>
+<script src="js/asummerment/asummerment.js"></script>
+<script src="js/report/report.js"></script>
+<script src="js/uploader/uploader.js"></script>
+
+<script src="js/main.js"></script>
 
 
 
-<script>
-require.config({
-	baseUrl :'js',
-	paths :{
-		jquery : 'jquery-3.0.0',
-		jqueryUI : 'jquery-ui-1.8.2.custom.min',
-		i18n:'i18n/grid.locale-cn',
-		jqGrid:'jquery.jqGrid.min',
-		uploader :'uploader/main',
-		toprecover:'topRecover/main',
-		asummerment:'asummerment/main',
-		report:'report/main',
-		main :'main'
-	}
-})
 
 
 
-require(['main'],function(main){
-	main.init();
-	
-})
 
 
-</script>

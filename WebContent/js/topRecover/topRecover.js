@@ -1,15 +1,18 @@
-define([],function(){
+
 	
 	
 
+$.topRecover = function(){
 	
-	var init = function(){
+	this.init = function(){
+		
 		$('.mainContent').html('');
 		$.get('topRecover.jsp',function(html){
 			$('.mainContent').html(html)
 			
 		})	
-	
 	}
-	return {init:init}
-})
+	
+}
+var topRecover1 = new $.topRecover();
+	

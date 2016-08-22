@@ -6,9 +6,32 @@ $.assumnet = function(){
 			$('.mainContent').html('');
 			$.get('asummerment.jsp',function(html){
 				
-				var link = $("<link>");
+				/*var link = $("<link>");
 				link.attr({rel:"stylesheet",href:"css/assument/assument.css"});
-				$("head").append(link)
+				$("head").append(link)*/
+				utilS.loadCss($("head"),"css/assument/assument.css")
+				
+				$.ajax({
+					url:"queryStates.action",
+					type:"POST"
+					
+				}).done(function(data){
+						var state =data;
+						console.log(data.states);
+						var state = data.states;
+						if(state=="finish"){
+							
+							console.log("完成状态")
+							
+							$(".reuslt").show();
+							
+						}else if(state="config"){
+							
+							$(".config").show();
+							
+						}
+											
+				})
 				
 				
 				
@@ -19,7 +42,7 @@ $.assumnet = function(){
 				$(".config ul.title li").each(function(i){
 					$(this).bind("click",function(){
 						$(".config ul.title li").eq(i).addClass("on").siblings().removeClass("on")
-						$(".config ul.content li").eq(i).addClass("show").siblings().removeClass("show")
+						$(".config ul.content>li").eq(i).addClass("show").siblings().removeClass("show")
 						
 					})
 					
@@ -48,7 +71,26 @@ $.assumnet = function(){
 					}).done(function(data){
 						
 						var rows = data.rows;					
-						initJq(rows)
+						initJq(rows);
+					    $(".ui-jqgrid tr.jqgrow td").each(function(){
+							
+							
+							var attr = $(this).attr("title")
+							if(attr.indexOf("img")!=-1){
+								
+								//console.log($(this).attr("class","process"))
+								$(this).addClass("procss")
+								$('.procss').html("");
+								var div = $("<div></div>");
+								//div.className = "toolProcess";
+								div.attr("class","toolProcess")
+								$('.procss').append(div)
+								/*$(".process").each(function(){
+									
+									$(this).html("");
+								})*/
+							}
+						})
 					})
 					
 				}

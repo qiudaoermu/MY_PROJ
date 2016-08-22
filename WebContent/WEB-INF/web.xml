@@ -48,6 +48,8 @@
           <filter-class>
              	 org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter
           </filter-class>
+          
+          
 	</filter>
 	
 	 <filter-mapping>

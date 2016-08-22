@@ -25,7 +25,7 @@ public class getJson {
 	public String getList(){   
         Map<String, Object> map = new HashMap<String, Object>();   
         List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();   
-        for(int i=0;i<34;i++){   
+        for(int i=0;i<8;i++){   
             Map<String, Object> m = new HashMap<String, Object>();   
             m.put("customer", "tag"+i);   
             m.put("orderdate", "img/Mic"+i+".jpg");  

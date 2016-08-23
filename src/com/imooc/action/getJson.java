@@ -28,7 +28,7 @@ public class getJson {
         for(int i=0;i<8;i++){   
             Map<String, Object> m = new HashMap<String, Object>();   
             m.put("customer", "tag"+i);   
-            m.put("orderdate", "img/Mic"+i+".jpg");  
+            m.put("orderdate", (i+1)*20);  
             m.put("price", "index"+i);
             m.put("vat", 1000+i);
             

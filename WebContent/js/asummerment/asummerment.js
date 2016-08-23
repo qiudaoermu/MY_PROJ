@@ -54,6 +54,7 @@ $.assumnet = function(){
 					$(".config").fadeOut();
 					$(".process").fadeIn("slow",function(){
 						process();
+						changeWidth();
 						
 					});
 					$(".asummerment").bind("click",function(){
@@ -66,17 +67,20 @@ $.assumnet = function(){
 					$.ajax({
 						url:"getJson.action",
 						
-						type:"POST"
+						type:"POST",
+						async: false
 						
 					}).done(function(data){
 						
-						var rows = data.rows;					
+						var rows = data.rows;	
+						console.log(rows[0].orderdate)
 						initJq(rows);
 					    $(".ui-jqgrid tr.jqgrow td").each(function(){
 							
 							
 							var attr = $(this).attr("title")
 							if(attr.indexOf("img")!=-1){
+							var attr = $(this).attr("aria-describedby")
 								
 								//console.log($(this).attr("class","process"))
 								$(this).addClass("procss")
@@ -89,12 +93,63 @@ $.assumnet = function(){
 									
 									$(this).html("");
 								})*/
+								var index = $(".toolProcess").index();
+								/*
+								$(".toolProcess").each(function(i){
+									var index = $(this).index();
+									var width = rows[i].orderdate;
+									console.log(width)
+									$(".toolProcess").eq(i).css({width:width})
+									
+								})
+								
+								for(var i=0;i<$(".toolProcess").length;i++){
+									var width = rows[i].orderdate;
+									console.log(width)
+									$(".toolProcess").eq(i).css({width:width})
+								}
+								*/
+								
 							}
+							
 						})
 					})
 					
 				}
+				function changeWidth(){
 					
+					
+				
+					var k=0;
+						
+					setTimeout(function(){
+						
+						
+						var time = setInterval(function(){
+							k++;
+							if(k>40){
+								
+								clearInterval(time)
+								k=0
+							}
+							$.ajax({
+								url:"getWidth.action",
+								
+								type:"POST",
+								async: false
+								
+							}).done(function(data){
+								console.log(data)
+								for(var i=0;i<$(".toolProcess").length;i++){
+									$(".toolProcess").eq(i).css({width:data[i]})
+								}
+							})
+							
+						},1000)
+						
+					},2000)
+				}
+				
 					
 					
 					
@@ -114,10 +169,10 @@ $.assumnet = function(){
 					        data: gidData,
 					       
 					        colModel: [
-					             {name: 'customer',  width: 55,align:'center'},
-					             {name: 'orderdate',  width: 55, align: 'center'},
-					             {name: 'price',  width: 55,align:'center'},
-					             {name:'vat',width:55,align: 'center'}
+					             {name: 'customer',  width: 55,align:'center' , sortable:false},
+					             {name: 'orderdate',  width: 55, align: 'center',  sortable:false},
+					             {name: 'price',  width: 55,align:'center',  sortable:false},
+					             {name:'vat',width:55,align: 'center',  sortable:false}
 					        ],
 
 					        rowNum:10,
@@ -126,6 +181,8 @@ $.assumnet = function(){
 					        caption: 'Preserving Selection on Client-side sorting',
 							width:'1250',
 					        height: '100%',
+					      
+					        
 					        
 					    });	
 				}

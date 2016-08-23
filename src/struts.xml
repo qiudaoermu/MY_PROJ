@@ -17,6 +17,11 @@
    	 			 	 <param name="root">states</param> 
    	 			 </result>
    	 	</action>
+   	 		<action name="getWidth" class="com.imooc.action.getWidth" method="getWidth">
+   	 			 <result type="json">
+   	 			 	 <param name="root">responseWidth</param> 
+   	 			 </result>
+   	 	</action>
    	 	
     </package> 
   

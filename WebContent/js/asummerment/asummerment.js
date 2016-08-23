@@ -75,12 +75,12 @@ $.assumnet = function(){
 						var rows = data.rows;	
 						console.log(rows[0].orderdate)
 						initJq(rows);
+						
 					    $(".ui-jqgrid tr.jqgrow td").each(function(){
 							
 							
-							var attr = $(this).attr("title")
-							if(attr.indexOf("img")!=-1){
 							var attr = $(this).attr("aria-describedby")
+							if(attr.indexOf("theGrid_orderdate")!=-1){
 								
 								//console.log($(this).attr("class","process"))
 								$(this).addClass("procss")

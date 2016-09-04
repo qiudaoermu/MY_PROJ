@@ -6,6 +6,7 @@
 	MARGIN-RIGHT: auto; MARGIN-LEFT: auto;
 	margin-top:20px;
 	display: none;
+	position:relative;
 }
 .config ul.title{
 
@@ -22,19 +23,23 @@
 	text-align: center;
 	border-bottom:none;
 	border-right:none;
+	cursor:pointer;
 }
 .config ul.title li:last-child {
 
 	border-right:1px solid #666;
+	
 }
+
 .config ul.title li.on{
 
-
-	background: #eeffee;
+	
+	background: #59bcec;
+	color:#fff
 }
 .config ul.content{
 
-	width:100%;
+	width:99.8%;
 	height:400px;
 
 }
@@ -45,7 +50,7 @@
 	display: none;
 }
 
-.config ul.content>li ul{
+.config ul.content>li>ul{
 	width:60%;
 	height:200px;
 	margin-left: 20px;
@@ -60,16 +65,106 @@
 
 }
 
+.config ul.content>li ul.content2{
+	width:20%;
+	height:300px;
+	margin-left:25px;
+}
+.config ul.content>li ul.content2 li{
+	width:100%;
+	height:40px;
+	border:1px solid #ddd;
+	text-align:center;
+	margin-top:20px;
+	line-height:40px;
+	cursor:pointer;
+
+}
+.config ul.content>li ul.content2-right{
+	
+	width:70%;
+	height:300px;
+	border:1px solid #000;
+	
+	margin-top:40px;
+
+}
+.config ul.content>li ul.content2-right>li{
+
+	display:none;
+}
+.config ul.content>li>ul{
+	
+	float:left;
+}
+.config ul.content>li ul.content2-right li.show{
+		
+	display:block;
+	
+}
+.config ul.content>li ul.content2-right li.show>ul{
+	
+	margin-left:20px;
+	margin-top:20px;
+}
+.config ul.content>li ul.content2 li.on{
+	
+		background:#59bcec;
+			color:#fff
+}	
+
 .config ul.content li.show{
 
 	display:block;
 }
+
+.config ul.content>li ul.content2-right>li>ul>li input{
+	width:200px;
+	height:20px;
+	float:right;
+	display:block;
+}
+
+.config ul.content>li .askData>ul{
+	
+	width:200px;
+	height:300px;
+	
+	display:block;
+	float:left
+	
+}
+.config ul.content>li .askData>ul>li{
+	
+	width:200px;
+	height:60px;
+	
+	display:block;
+	border:1px solid #ddd;
+	text-align:center;
+	cursor:pointer;
+	line-height:60px;
+}
+.config ul.content>li .askData>ul>li.on{
+	
+	background:#59bcec;
+	color:#fff;
+}
+.aslDataContent{
+	
+	width:600px;
+	height:340px;
+	border:1px solid #eee;
+	float:left;
+
+}
+
 .startAssument{
 	width:100px;
 	height:40px;
 	background:#59bcec;
 	float:right;
-	margin-top: 5px;
+	margin-top: 16px;
 	line-height: 40px;
 	text-align: center;
 	cursor: pointer;
@@ -80,14 +175,7 @@
 	display: none;
 
 }
-.reuslt{
 
-
-	width:1200px;
-	height:800px;
-	background: #eeffcc;
-	display: none;
-}
 #theGrid tbody tr{
 	height:30px;
 
@@ -98,8 +186,191 @@
 }
 .toolProcess{
 
-	width:0%;
+	width:90%;
 	height:50%;
-	background: #59bcec;
+	border-radius:8px;
+	background: #dbdbdb;
+	position:relative;
+	margin:auto 0;
+	margin-left:11px;
 
+}
+.tool{
+	
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	position:absolute;
+	background:#59bcec;
+	border-radius:8px;
+	
+}
+#slider{
+	    width: 500px;
+    height: 15px;
+    margin-left: 39px;
+    margin-top: 30px;
+	
+	
+}
+
+.config ul.content>li ul{
+	
+	float:left
+}
+.config ul.content>li ul.wangluo{
+	width:100px;
+	height:313px;
+	
+	
+}
+
+.config ul.content>li ul.wangluo li{
+	width:100px;
+	height:60px;
+	border:1px solid #eee;
+	cursor:pointer;
+	text-align:center;
+	line-height:60px;
+	
+}
+.config ul.content>li ul.wangluo>li.on{
+	
+	background:#59bcec;
+	color:#fff;
+	
+}
+.config ul.content>li ul.wangluo>li ul.wangluoCheck{
+	display:none;
+	    margin-left: 40px;
+    position: absolute;
+    left: 264px;
+    color: #000;
+    top: 41px;
+
+	
+}
+.config ul.content>li ul.wangluo>li ul.wangluoCheck.on{
+	
+	display:block;
+}
+.config ul.content>li ul.wangluo>li ul.wangluoCheck li{
+	
+	height:60px;
+	line-height:60px;
+}
+.reuslt{
+
+
+	width:1200px;
+	height:800px;
+	
+	display: none;
+}
+.resultTable{
+	
+	width:1200px;
+	height:40px;
+}
+.resultTable li{
+	height:40px;
+	width :15%;
+	margin-left:30px;
+	float:left;
+	border:1px solid #ddd;
+	line-height:40px;
+	text-align:center;
+	cursor:pointer;
+	    border-bottom: none;
+}
+.resultTable li.on{
+	
+	background:#f1f1f1;
+}
+.resultContent{
+	
+	width:1200px;
+	position:relative;
+	
+
+	border:1px solid #ddd;
+}
+
+
+.resultContent li{
+	
+	width:1200px;
+	display:none;
+	
+	border:none;
+}
+.resultContent li.on{
+	
+	display:block;
+	
+}
+#anlyseCircle{
+	
+	width:600px;
+	height:400px;
+	top: 10px;
+	position:absolute;
+	right:0px;
+}
+
+.score{
+	position:absolute;
+	height:150px;
+	width:150px;
+	font-size:120px;
+	right: 218px;
+    top: 129px;
+    color:#65b8a2;
+	
+}
+#anlysetool{
+	width:1200px;
+	height:300px;
+	
+}
+#gbox_theGrid2{
+	
+	float: left;
+    position: absolute;
+    left: 82px;
+    top: 130px;
+}
+.anlyseTop{
+	width:1000px;
+	height:320px;
+	
+}
+.DetailedContent{
+	
+	width:1200px;
+	
+	
+	
+}
+.DetailedContent li{
+	
+	width:1200px;
+	height:40px;
+	background:#f9f9f9;
+	display:block;
+	border-top:1px solid #DDE;
+	line-height:40px;
+	text-indent:20px;
+}
+h3{
+	
+	height:50px;
+	line-height:50px;
+	color:#7f7f7f;
+	display:block;
+	text-indent:20px;
+	width:100%;
+	background:#f1f1f1;
+	border:1px solid #ddd;
 }

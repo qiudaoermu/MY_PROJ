@@ -1,11 +1,14 @@
 
+	
+ var index = 0;
+
 $(function(){
 	/**
 	 * 
 	 * 四个页面加载的主要方法
 	 */
 	 
-
+	
 	uploader1.init();
 	$(".uploader").bind("click",function(){
 		

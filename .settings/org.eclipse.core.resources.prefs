@@ -1,5 +1,11 @@
 eclipse.preferences.version=1
 encoding//WebContent/asummerment.jsp=UTF-8
+encoding//WebContent/jsp/content0.jsp=UTF-8
+encoding//WebContent/jsp/content1.jsp=UTF-8
+encoding//WebContent/jsp/content2.jsp=UTF-8
+encoding//WebContent/jsp/content3.jsp=UTF-8
+encoding//WebContent/jsp/content4.jsp=UTF-8
 encoding//WebContent/operator.jsp=UTF-8
+encoding//WebContent/uploader.jsp=UTF-8
 encoding//src/com/imooc/fliter.java=UTF-8
 separateDerivedEncodings=true

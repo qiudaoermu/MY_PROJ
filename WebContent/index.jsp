@@ -37,8 +37,6 @@
 <script src="js/lib/jquery-ui.js"></script>
 <script src="js/i18n/grid.locale-cn.js"></script>
 <script src="js/lib/jquery.jqGrid.src.js"></script>
-
-
 <script src="js/topRecover/topRecover.js?<%=version%>"></script>
 <script src="js/asummerment/asummerment.js?<%=version%>"></script>
 <script src="js/report/report.js"></script>

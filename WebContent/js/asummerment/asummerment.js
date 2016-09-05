@@ -333,6 +333,7 @@ $.assumnet = function(){
 							        trigger: 'item',
 							        formatter: "{a} <br/>{b}: {c} ({d}%)"
 							    },
+							    color:["#D7D7D7","#D87A80"],
 							    grid: {
 							        left: '3%',
 							        right: '4%',
@@ -343,7 +344,7 @@ $.assumnet = function(){
 							        orient: 'vertical',
 							        x: 'left',
 							        y:"middle",
-							        data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+							        data:['直接访问','邮件营销']
 							    },
 							    series: [
 							        {
@@ -357,7 +358,7 @@ $.assumnet = function(){
 							                    position: 'center'
 							                },
 							                emphasis: {
-							                    show: true,
+							                    show: false,
 							                    textStyle: {
 							                        fontSize: '30',
 							                        fontWeight: 'bold'
@@ -371,10 +372,8 @@ $.assumnet = function(){
 							            },
 							            data:[
 							                {value:335, name:'直接访问'},
-							                {value:310, name:'邮件营销'},
-							                {value:234, name:'联盟广告'},
-							                {value:135, name:'视频广告'},
-							                {value:1548, name:'搜索引擎'}
+							                {value:40, name:'邮件营销'},
+							               
 							            ]
 							        }
 							    ]
@@ -440,6 +439,13 @@ $.assumnet = function(){
 					            		        		
 					            		        		height:30
 					            		        	})
+													$("#theGrid2 tbody tr").not(":first").bind("click",function(){
+														return false;
+													})
+					            		        },
+					            		        onSelectRow : function(){
+					            		        	
+					            		        	return false;
 					            		        }
 					            		    });
 					            
@@ -454,6 +460,8 @@ $.assumnet = function(){
 					                        type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
 					                    }
 					                },
+					                color:['#D87A80',  '#FFB980',  '#5AB1EF'],
+					                       
 					                grid: {
 					                    left: '1%',
 					                    right: '2%',
@@ -464,7 +472,7 @@ $.assumnet = function(){
 					                legend: {
 					                	   x:"center",
 					                       y:"bottom",
-					                    data: ['直接访问', '邮件营销','联盟广告','视频广告','搜索引擎']
+					                    data: ['严重', '警告','一般',]
 					                },
 					               
 					                xAxis:  {
@@ -472,11 +480,12 @@ $.assumnet = function(){
 					                },
 					                yAxis: {
 					                    type: 'category',
-					                    data: ['周一','周二','周三','周四','周五','周六','周日']
+					                    data: ['周一','周二','周三','周四','周五']
 					                },
+					                
 					                series: [
 					                    {
-					                        name: '直接访问',
+					                        name: '严重',
 					                        type: 'bar',
 					                        stack: '总量',
 					                        label: {
@@ -485,10 +494,31 @@ $.assumnet = function(){
 					                                position: 'insideRight'
 					                            }
 					                        },
-					                        data: [320, 302, 301, 334, 390, 330, 320]
+					                       itemStyle:{
+					                    	   normal :{
+					                    		   barBorderRadius : 15,
+					                    		   borderType :"dotted",
+					                    		   shadowColor: 'rgba(0, 0, 0, 0.6)',
+					                    		   shadowBlur: 4
+					                    		   
+					                    	   }
+					                    	  
+					                       },
+					                        barWidth :17,
+					                        data: [
+					                               121, 341,
+					                             156,
+					                                
+					                              
+					                               101, 123
+					                           ]
+					                       
+					                       
+					                       
+					                       
 					                    },
 					                    {
-					                        name: '邮件营销',
+					                        name: '警告',
 					                        type: 'bar',
 					                        stack: '总量',
 					                        label: {
@@ -497,43 +527,41 @@ $.assumnet = function(){
 					                                position: 'insideRight'
 					                            }
 					                        },
-					                        data: [120, 132, 101, 134, 90, 230, 210]
+					                        itemStyle:{
+						                    	   normal :{
+						                    		   barBorderRadius : 15,
+						                    		   borderType :"dotted",
+						                    		
+						                    		   
+						                    	   }
+						                    	  
+						                       },
+					                        barCategoryGap:'4%',
+					                        barWidth :17,
+					                        data: [120, 132, 101, 134, 90]
 					                    },
 					                    {
-					                        name: '联盟广告',
+					                        name: '一般',
 					                        type: 'bar',
 					                        stack: '总量',
+					                        itemStyle:{
+						                    	   normal :{
+						                    		   barBorderRadius : 15,
+						                    		   borderType :"dotted",
+						                    		 
+						                    		   
+						                    	   }
+						                    	  
+						                       },
 					                        label: {
 					                            normal: {
 					                                show: true,
 					                                position: 'insideRight'
 					                            }
 					                        },
-					                        data: [220, 182, 191, 234, 290, 330, 310]
-					                    },
-					                    {
-					                        name: '视频广告',
-					                        type: 'bar',
-					                        stack: '总量',
-					                        label: {
-					                            normal: {
-					                                show: true,
-					                                position: 'insideRight'
-					                            }
-					                        },
-					                        data: [150, 212, 201, 154, 190, 330, 410]
-					                    },
-					                    {
-					                        name: '搜索引擎',
-					                        type: 'bar',
-					                        stack: '总量',
-					                        label: {
-					                            normal: {
-					                                show: true,
-					                                position: 'insideRight'
-					                            }
-					                        },
-					                        data: [820, 832, 901, 934, 1290, 1330, 1320]
+					                        barCategoryGap:'4%',
+					                        barWidth :17,
+					                        data: [220, 182, 191, 234, 290]
 					                    }
 					                ]
 					            };

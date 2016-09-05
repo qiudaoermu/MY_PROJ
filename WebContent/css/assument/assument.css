@@ -282,19 +282,23 @@
 	line-height:40px;
 	text-align:center;
 	cursor:pointer;
-	    border-bottom: none;
+	border-bottom: none;
+	border-radius:8px 8px 0px 0px;
 }
 .resultTable li.on{
 	
 	background:#f1f1f1;
+	color:#222;
+	
 }
 .resultContent{
 	
 	width:1200px;
 	position:relative;
 	
-
+	
 	border:1px solid #ddd;
+	border-top:none;
 }
 
 
@@ -373,4 +377,11 @@ h3{
 	width:100%;
 	background:#f1f1f1;
 	border:1px solid #ddd;
+	border-left:none;
+	border-right:none;
 }
+h3[title]{
+	border-bottom:none
+	
+}
+

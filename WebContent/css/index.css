@@ -73,20 +73,25 @@ body{font-family:Microsoft YaHei}
 .tabList{width:1000px;
 			height:70px;
 		margin:0px auto;
-		 margin-top: 93px;}
+		 margin-top: 93px;
+		 margin-bottom:40px;
+		 
+		 }
 .tabList li{
 	    width: 24.1%;
     background: #f1f1f1;
     height: 60px;
     float: left;
     
-    font-size: 18px;
+    font-size: 21px;
     text-align: center;
     line-height:60px;
-    color: #672569;
+    color: #000;
+    
     cursor: pointer;
     margin-left: 12px;
     border-radius:4px;
+    border-radius:8px 8px 0px 0px;
 
 			}
 .tabList li.uploader{
@@ -95,7 +100,7 @@ body{font-family:Microsoft YaHei}
 }	
 .tabList li.on{
 
-
+	font-weight:bold;
 	background:#59bcec;
 	color:#fff;
 

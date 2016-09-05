@@ -122,7 +122,7 @@
 					
 					</div>
 					
-					<h3 class="DetailedTitle">
+					<h3 class="DetailedTitle" title="">
 						详细评估结果
 					</h3>
 					<ul class="DetailedContent">

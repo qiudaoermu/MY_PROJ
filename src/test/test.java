@@ -1,3 +1,4 @@
+/*
 package test;
 
 import java.io.IOException;
@@ -9,13 +10,14 @@ import AryyListfanxing.*;
 public class test {
 
 	public static void main(String[] args) throws ServletException, IOException {
-		
+
 		ArrLitfanx arf = new ArrLitfanx();
 		ValiateUserNameServlet serv1 = new ValiateUserNameServlet();
-	
-		
+
+
 		//arf.changeString("chang");
-		
+
 	}
 
 }
+*/

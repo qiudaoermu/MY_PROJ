@@ -124,18 +124,31 @@
 					
 					<h3 class="DetailedTitle" title="">
 						详细评估结果
+						<div class="switch">网络维度</div>
 					</h3>
-					<ul class="DetailedContent">
-						<li>网络评估</li>
-						<li>丢包率阈值</li>
-						<li>网络安全</li>
-						<li>流量评估</li>
-						<li>运维管理</li>
-					</ul>
+					<div class="allDetailedContent">
+						<ul class="DetailedContent wangyuan">
+							<li><span>+</span> 网络评估
+								
+							</li>
+								
+							<li><span>+</span> 丢包率阈值</li>
+							<li><span>+</span> 网络安全</li>
+							<li><span>+</span> 流量评估</li>
+							<li><span>+</span> 运维管理</li>
+							<li class="clear"></li>
+						</ul>
+						<div class="wangluo">
+							 	<table id="jqGrid3"></table>
+								<div id="jqGridPager"></div>
+						</div>
+						
+						
+					</div>
 			
 			</li>
 			<li></li>
 			<li></li>
 		</ul>
-		
+	
 </div>
